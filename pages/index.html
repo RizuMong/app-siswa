@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <main></main>
-  </body>
-  <script src="../src/js/bootstrap.bundle.js"></script>
+<html>
+<head>
+    <title>Login Form</title>
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+
+            <div class="col-lg-6 col-md-6 form-container">
+                <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box">
+                    <div class="card-body">
+                        <img src="/assets/logo-man.png" alt="" class="logo-man" />
+                        <h4 class="title mt-4 ml-lg-3">Selamat datang!</h4>
+                        <p class="text-1 ml-lg-3">Masukan data untuk melanjutkan</p>
+                        <form class="form-box px-3">
+                            <span>NIP / NISN</span>
+                        <div class="form-input">
+                            <input
+                            type="email"
+                            name=""
+                            placeholder="Masukan NIP / NISN"
+                            tabindex="100"
+                            required
+                            />
+                        </div>
+                        <span>Password</span>
+                        <div class="form-input">
+                            <input
+                            type="password"
+                            name=""
+                            placeholder="Password"
+                            required
+                            />
+                        </div>
+            
+                          <div class="mb-3">
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="cb1"
+                                name=""
+                              />
+                              <label class="custom-control-label Rem" for="cb1"
+                                >Remember me</label
+                              >
+                            </div>
+                          </div>
+            
+                          <div class="mb-3">
+                            <button type="submit" class="btn btn-block">
+                              Login
+                            </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
