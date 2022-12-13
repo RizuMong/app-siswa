@@ -158,6 +158,11 @@
 
 /* sidebar */
 
+.containner {
+  display: flex;
+  min-height: 100vh;
+}
+
 .sidebar {
   padding-top: 28px;
   display: flex;
@@ -202,7 +207,12 @@
 }
 
 .text-das {
+  color: white;
   font-size: 18px;
+}
+
+.main-content {
+  flex-grow: 1;
 }
 
 footer {
