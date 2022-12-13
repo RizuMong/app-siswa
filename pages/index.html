@@ -27,16 +27,15 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
-
+          <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
             <div class="col-lg-6 col-md-6 form-container">
                 <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box">
                     <div class="card-body">
                         <img src="/assets/logo-man.png" alt="" class="logo-man" />
                         <h4 class="title mt-4 ml-lg-3">Selamat datang!</h4>
-                        <p class="text-1 ml-lg-3">Masukan data untuk melanjutkan</p>
+                        <p class="text-1 ml-lg-3 text-login">Masukan data untuk melanjutkan</p>
                         <form class="form-box px-3">
-                            <span>NIP / NISN</span>
+                            <span class="NIP">NIP / NISN</span>
                         <div class="form-input">
                             <input
                             type="text"
@@ -46,7 +45,7 @@
                             required
                             />
                         </div>
-                        <span>Password</span>
+                        <span class="NIP">Password</span>
                         <div class="form-input">
                             <input
                             type="password"
@@ -70,13 +69,17 @@
                             </div>
                           </div>
             
-                          <div class="mb-3">
-                            <button type="submit" class="btn btn-block">
+                          <div class="mb-3 button-submit">
+                            <a href="#">
+                              <button type="submit" class="btn btn-block">
                               Login
-                            </button>
+                              </button>
+                            </a>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 </html>
