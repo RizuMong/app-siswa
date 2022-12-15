@@ -187,6 +187,10 @@
   color: aliceblue;
 }
 
+.list-item a {
+  text-decoration: none;
+}
+
 .list {
   list-style-type: none;
   margin-top: 70px;
@@ -221,7 +225,7 @@ footer {
   padding-bottom: 40px;
 }
 
-footer a:hover {
+footer a {
   text-decoration: none;
 }
 
@@ -261,6 +265,7 @@ footer a:hover {
 }
 
 .card-jadwal {
+  position: relative;
   width: 100%;
   height: auto;
   padding: 24px;
@@ -277,15 +282,17 @@ footer a:hover {
 }
 
 .card-profile {
+  font-weight: 600;
   color: black;
   font-size: 14px;
 }
 
 .card-matkul {
+
   border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
-  width: 70%;
+  width: 60%;
   color: #4D9937;
   background-color: #EFF8EC;
 }
@@ -308,6 +315,11 @@ footer a:hover {
   height: 18px;
 
 }
+.download {
+  position: absolute;
+  right: 0;
+  padding-right: 24px;
+}
 
 .button-unduh {
   margin-left: 22px;
@@ -320,11 +332,66 @@ footer a:hover {
   color: #4D9937;
 }
 
+.btn-lapor {
+  border: none;
+  font-size: 14px;
+  color: #EFF8EC;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
 .card-jadwal:hover {
   transition: all ease-in .3s;
   background-color: #EFF8EC;
 }
 
+/* modal */
+.text-absen {
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+}
 
+.text-keterangan {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+}
+
+.form-check {
+  margin-top: -5px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.inputan::-webkit-input-placeholder{
+  font-size: 14px;
+}
+
+.btn-submit-laporan {
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.btn-submit-laporan a {
+  color: #EFF8EC;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-absen-siswa {
+  margin-top: -20px;
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+}
+
+.p-siswa {
+  color: rgb(145, 144, 144);
+  font-size: 12px;
+}
 
 
