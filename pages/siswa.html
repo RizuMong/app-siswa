@@ -39,17 +39,37 @@
         </div>
       </div>
       <div class="main-content">
+        <!-- mobile navbar -->
+        <div class="mobile bottom-0">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand d-block" href="#">
+                <img src="/assets/logo dash.png" alt="Logo" class="img-nav-bottom">
+                <p class="text-navbot">Dashboard</p>
+              </a>
+              <a class="navbar-brand" href="#">
+                <img src="/assets/logout.png" alt="Logo" class="img-nav-bottom1">
+                <p class="text-navbot1">Logout</p>
+              </a>
+            </div>
+          </nav>
+        </div>
+        
+        <!-- end -->
         <div class="container-fluid d-flex justify-content-between mt-2">
-          <p class="navbar-brand-title p-4 pt-4 text-decoration-none">
+          <span class="d-lg-none img-tab p-3">
+            <img src="/assets/logo-man-2.png" alt="">
+          </span>
+          <p class="navbar-brand-title p-4 pt-4 text-decoration-none d-none d-sm-none d-lg-block">
             Dashboard
           </p>
           <a class="navbar-brand p-4 pt-4 d-flex" href="#">
             <img
               src="/assets/foto-profil.png"
               alt=""
-              class="d-inline-block img-profile"
+              class="d-inline-block img-profile "
             />
-            <p class="text-profile align-text-top">Hai, jhon doe</p>
+            <p class="text-profile align-text-top d-none d-sm-none d-md-block">Hai, jhon doe</p>
           </a>
         </div>
         <hr class="mt-0 mx-5" />
@@ -62,7 +82,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 mx-3">
+              <div class="col-md-6 col-lg-4 col-xl-4 m-0">
                 <div class="card-jadwal mt-3">
                   <div class="card-content mx-auto">
                     <div class="d-flex card-profile" href="#">

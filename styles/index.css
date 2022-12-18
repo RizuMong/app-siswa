@@ -42,9 +42,9 @@ input[type='radio']:checked:after {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: #F7F7F7;
-}
+} */
 
 @media screen and (max-width: 1026px) {
   .form-input input {
@@ -80,6 +80,10 @@ body {
   p {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 425px){
+  
 }
 
 /* login */
@@ -427,4 +431,35 @@ footer a {
 .p-siswa {
   color: rgb(145, 144, 144);
   font-size: 12px;
+}
+
+.img-tab {
+  width: 32px;
+  height: 36px;
+}
+
+/* !  */
+
+.mobile {
+  background-color: #4d9937;
+}
+
+.img-nav-bottom {
+  width: 18px;
+  height: 18px;
+  margin-left: 80px;
+}
+.text-navbot {
+  margin-left: 60px;
+  font-size: 10px;
+}
+
+.img-nav-bottom1 {
+  width: 18px;
+  height: 18px;
+  margin-right: 80px;
+}
+.text-navbot1 {
+  margin-right: 60px;
+  font-size: 10px;
 }
