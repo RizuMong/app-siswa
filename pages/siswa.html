@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="containner">
-      <div class="sidebar d-none d-md-none d-lg-block">
+      <div class="sidebar d-none d-md-none d-lg-block position-fixed">
         <div class="header p-4">
           <div class="list-item">
             <a href="#" class="p-3">
@@ -38,28 +38,8 @@
           </footer>
         </div>
       </div>
-      <div class="main-content">
-        <!-- mobile navbar -->
-        <!-- <div class="mobile fixed-bottom">
-          <nav class="navbar">
-            <div class="d-flex position-relative">
-              <div class="dashbord-nav">
-                <a href="#" class="nav__link col-md-6 text-decoration-none">
-                  <img src="/assets/logo dash.png" alt="">
-                  <span class="nav__text">Dashboard</span>
-                </a>
-              </div>
-              <div class="logout-nav">
-                <a href="#" class="nav__link col-md-6 text-decoration-none">
-                  <img src="/assets/logout.png" alt="">   
-                  <span class="nav__text">Logout</span>
-                </a>
-              </div>
-            </div>
-          </nav>
-          d-md-none d-lg-none d-xl-none
-        </div> -->
 
+      <div class="main-content">
         <nav class="navbar navbar-light bg-white navbar-expand fixed-bottom d-lg-none p-0"> 
           <ul class="navbar-nav nav-justified w-100">
               <li class="nav-item">
@@ -100,13 +80,210 @@
         <section id="Jadwal">
           <div class="container">
             <div class="row">
-              <div class="col-12 my-4">
+              <div class="col-12">
                 <span class="title-card">Jadwal hari ini</span>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-4 col-xl-4 m-0">
-                <div class="card-jadwal mt-3">
+            <div class="row mb-5">
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
+                  <div class="card-content mx-auto">
+                    <div class="d-flex card-profile" href="#">
+                      <img
+                        src="/assets/foto-profil.png"
+                        alt=""
+                        class="d-inline-block img-profile card-image"
+                      />
+                      <p class="pt-1">Ahmad Syafei, S.Pd</p>
+                    </div>
+
+                    <p class="card-matkul my-2">Matematika wajib</p>
+
+                    <div class="card-unduh my-2 pt-2">
+                      <p class="p">Bahan pembelajaran</p>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-lapor w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Laporan
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content p-3">
+                        <div class="modal-header">
+                          <span class="modal-title" id="">
+                            Laporan Ketua kelas
+                          </span>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen mt-3">Kehadiran Guru</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen-siswa">Kehadiran Siswa</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault3"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault4"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault4"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <p class="p-siswa">
+                                Inputkan Nama dan Keterangan Sakit, Izin, Alfa
+                              </p>
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-submit-laporan w-100">
+                            <a href="#" class="text-decoration-none"
+                              >Kirim laporan</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
                   <div class="card-content mx-auto">
                     <div class="d-flex card-profile" href="#">
                       <img
@@ -302,8 +479,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-4 m-0">
-                <div class="card-jadwal mt-3">
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
                   <div class="card-content mx-auto">
                     <div class="d-flex card-profile" href="#">
                       <img
@@ -499,8 +676,402 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-4 m-0">
-                <div class="card-jadwal mt-3">
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
+                  <div class="card-content mx-auto">
+                    <div class="d-flex card-profile" href="#">
+                      <img
+                        src="/assets/foto-profil.png"
+                        alt=""
+                        class="d-inline-block img-profile card-image"
+                      />
+                      <p class="pt-1">Ahmad Syafei, S.Pd</p>
+                    </div>
+
+                    <p class="card-matkul my-2">Matematika wajib</p>
+
+                    <div class="card-unduh my-2 pt-2">
+                      <p class="p">Bahan pembelajaran</p>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-lapor w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Laporan
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content p-3">
+                        <div class="modal-header">
+                          <p class="modal-title" id="staticBackdropLabel">
+                            Laporan Ketua kelas
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen mt-3">Kehadiran Guru</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen-siswa">Kehadiran Siswa</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault3"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault4"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault4"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <p class="p-siswa">
+                                Inputkan Nama dan Keterangan Sakit, Izin, Alfa
+                              </p>
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-submit-laporan w-100">
+                            <a href="#" class="text-decoration-none"
+                              >Kirim laporan</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
+                  <div class="card-content mx-auto">
+                    <div class="d-flex card-profile" href="#">
+                      <img
+                        src="/assets/foto-profil.png"
+                        alt=""
+                        class="d-inline-block img-profile card-image"
+                      />
+                      <p class="pt-1">Ahmad Syafei, S.Pd</p>
+                    </div>
+
+                    <p class="card-matkul my-2">Matematika wajib</p>
+
+                    <div class="card-unduh my-2 pt-2">
+                      <p class="p">Bahan pembelajaran</p>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="d-flex card-profile" href="#">
+                        <img
+                          src="/assets/pdf.png"
+                          alt=""
+                          class="d-inline-block img-profile card-image"
+                        />
+                        <p class="mapel">Slide Matematika Sesi 1</p>
+                        <div class="button-unduh">
+                          <a class="download text-decoration-none" href="http"
+                            >Unduh</a
+                          >
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-lapor w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    Laporan
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content p-3">
+                        <div class="modal-header">
+                          <p class="modal-title" id="staticBackdropLabel">
+                            Laporan Ketua kelas
+                          </p>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen mt-3">Kehadiran Guru</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault1"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault2"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-body">
+                          <div>
+                            <p class="text-absen-siswa">Kehadiran Siswa</p>
+                            <section class="Absen-check d-flex mt-1">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault3"
+                                >
+                                  Hadir
+                                </label>
+                              </div>
+                              <div class="form-check mx-2">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault1"
+                                  id="flexRadioDefault4"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexRadioDefault4"
+                                >
+                                  Absen
+                                </label>
+                              </div>
+                            </section>
+                            <div class="mb-3 my-3 text-keterangan">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label mb-3"
+                                >Keterangan</label
+                              >
+                              <p class="p-siswa">
+                                Inputkan Nama dan Keterangan Sakit, Izin, Alfa
+                              </p>
+                              <textarea
+                                class="form-control inputan"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Masukan Keterangan"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-submit-laporan w-100">
+                            <a href="#" class="text-decoration-none"
+                              >Kirim laporan</a
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
+                <div class="card-jadwal">
                   <div class="card-content mx-auto">
                     <div class="d-flex card-profile" href="#">
                       <img
