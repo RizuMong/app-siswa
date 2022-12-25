@@ -347,7 +347,7 @@ footer a {
 
 .p {
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: black;
 }
@@ -362,7 +362,16 @@ footer a {
   width: 18px;
   height: 18px;
 }
+
 .download {
+  position: absolute;
+  right: 0;
+  padding-right: 24px;
+}
+
+.delete {
+  font-size: 14px;
+  font-weight: 300;
   position: absolute;
   right: 0;
   padding-right: 24px;
@@ -380,11 +389,27 @@ footer a {
 }
 
 .btn-lapor {
-  border: none;
-  font-size: 14px;
+  font-size: 12px;
   color: #eff8ec;
   font-weight: 500;
   background-color: var(--main-color);
+}
+.btn-lapor:hover {
+  border: 1px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+}
+
+.btn-lapor-guru {
+  border: 1px solid var(--main-color);
+  font-size: 12px;
+  color: var(--main-color);
+  font-weight: 500;
+  background-color: white;
+}
+.btn-lapor-guru:hover {
+  color: white;
+  background-color: #4d9937;
 }
 
 .card-jadwal:hover {
@@ -423,15 +448,17 @@ footer a {
 }
 
 .btn-submit-laporan {
-  border: none;
+  color: #eff8ec;
+  font-weight: 600;
+  font-size: 16px;
   height: 45px;
   background-color: var(--main-color);
 }
 
-.btn-submit-laporan a {
-  color: #eff8ec;
-  font-weight: 600;
-  font-size: 16px;
+.btn-submit-laporan:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background-color: #fff;
 }
 
 .text-absen-siswa {
@@ -451,8 +478,28 @@ footer a {
   height: 36px;
 }
 
-/* !  */
-
 nav ul li a span {
   font-size: 2px;
+}
+
+.chose-file {
+  border: none;
+}
+
+.modal-guru img {
+  height: 22px;
+  width: 22px;
+}
+
+.mapel-guru {
+  color: rgb(121, 117, 117);
+  font-size: 14px;
+  text-align: left;
+}
+
+.p-guru {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
 }
