@@ -75,6 +75,15 @@ form {
   text-decoration: none;
 }
 
+.btn {
+  height: 48px;
+  margin-top: 40px !important;
+}
+
+.input-height {
+  height: 48px !important;
+}
+
 .text-login {
   text-align: center;
   font-size: 30px;
@@ -89,8 +98,19 @@ form {
   color: #808080;
 }
 
+.form-container {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
 .logo-man {
-  margin-left: 44%;
+  margin-left: 42%;
+}
+
+.img-login {
+  height: 716px;
+  width: 720px;
+  object-fit: cover;
 }
 
 /* Responsive Design */
@@ -98,14 +118,84 @@ form {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .logo-man {
-    margin-left: 0px;
+    margin-left: 47%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .row > * {
+    padding-left: 0px;
   }
 
   .text-login {
     text-align: left;
+    font-size: 30px;
   }
 
   .text-form {
     text-align: left;
+    font-size: 16px;
+  }
+
+  .logo-man {
+    margin-left: 0%;
+  }
+
+  .img-login {
+    height: 640px;
+    width: 500px;
+    object-fit: cover;
+  }
+
+  .form-container {
+    margin-top: 20px;
+    margin-left: 48px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .row > * {
+    padding-left: 0px;
+  }
+
+  .form-container {
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+
+  .logo-man {
+    margin-left: 0%;
+  }
+
+  .img-login {
+    height: 716px;
+    width: 720px;
+    object-fit: cover;
+  }
+
+  .text-login {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .text-form {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .img-login {
+    height: 850px;
+    width: 720px;
+    object-fit: cover;
+  }
+
+  .form-container {
+    margin-top: 80px;
+    margin-left: 110px;
   }
 }
