@@ -189,7 +189,7 @@ form {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .img-login {
-    height: 850px;
+    height: 716px;
     width: 720px;
     object-fit: cover;
   }
