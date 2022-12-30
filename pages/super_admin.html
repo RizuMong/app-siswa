@@ -4,12 +4,174 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/css/bootstrap.css.map" />
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <title>Super Admin</title>
   </head>
   <body>
-    <main></main>
+    <main class="containner" id="dashboard">
+      <div class="sidebar d-none d-md-none d-lg-block position-fixed">
+        <div class="header p-4">
+          <div class="list-item">
+            <a href="#" class="p-3">
+              <img src="/assets/logo-man-2.png" alt="" class="icon" />
+              <span class="text-judul">MAN 2 KOTA SUKABUMI</span>
+            </a>
+
+            <div class="main">
+              <ul class="list p-3">
+                <li class="menu">Menu</li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/logo dash.png" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Dashboard</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/guru-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Guru</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/logo-kelas.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Kelas</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/siswa-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Siswa</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <footer>
+            <a href="#" class="p-3">
+              <img src="/assets/logout.png" alt="" class="icon-logout" />
+              <span class="text-logout">logout</span>
+            </a>
+          </footer>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <nav class="navbar navbar-light bg-white navbar-expand fixed-bottom d-lg-none p-0"> 
+          <ul class="navbar-nav nav-justified w-100">
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-center">
+                      <img src="/assets/das-nav.svg" alt="" class="">
+                      <span class="small d-block">Dashboard</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-center">
+                      <img src="/assets/guru1-logo.svg" alt="" class="">
+                      <span class="small d-block">Guru</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-center">
+                      <img src="/assets/kelas1-logo.svg" alt="" class="">
+                      <span class="small d-block">Kelas</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-center">
+                      <img src="/assets/siswa1-logo.svg" alt="" class="">
+                      <span class="small d-block">Siswa</span>
+                  </a>
+              </li>
+              
+              <li class="nav-item dropup">
+                  <a href="#" class="nav-link text-center" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                      <img src="/assets/log-nav.svg" alt="" class="">
+                      <span class="small d-block">Logout</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+
+        <!-- end -->
+        <div class="container-fluid d-flex justify-content-between mt-2">
+          <span class="d-lg-none img-tab p-3">
+            <img src="/assets/logo-man-2.png" alt="">
+          </span>
+          <p class="navbar-brand-title p-4 pt-4 text-decoration-none d-none d-sm-none d-lg-block">
+            Dashboard
+          </p>
+          <a class="navbar-brand p-4 pt-4 d-flex" href="#">
+            <img
+              src="/assets/foto-profil.png"
+              alt=""
+              class="d-inline-block img-profile "
+            />
+            <p class="text-profile align-text-top d-none d-sm-none d-md-block">Hai, jhon doe</p>
+          </a>
+        </div>
+        <hr class="mt-0 mx-5" />
+
+        <section id="Jadwal">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mt-3">
+                <span class="title-card">Laporan Guru</span>
+              </div>
+            </div>
+
+            <!-- table -->
+            <div class="table-responsive">
+              <table class="table table-striped table-hover mx-4 mt-3">
+                <thead >
+                  <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">NAMA</th>
+                    <th scope="col">MAPEL</th>
+                    <th scope="col">ABSENSI</th>
+                    <th scope="col">KELAS</th>
+                    <th scope="col">TTL</th>
+                    <th scope="col">KETERANGAN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
-  <script src="../src/js/bootstrap.bundle.js.map"></script>
+  <script src="../src/js/bootstrap.bundle.js"></script>
 </html>
