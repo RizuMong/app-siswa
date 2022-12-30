@@ -1,85 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Login Form</title>
     <meta charset="utf-8" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet"
-    />
-</head>
-<body>
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
-            <div class="col-lg-6 col-md-6 form-container">
-                <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box">
-                    <div class="card-body">
-                        <img src="/assets/logo-man.png" alt="" class="logo-man" />
-                        <h4 class="title mt-4 ml-lg-3">Selamat datang!</h4>
-                        <p class="text-1 ml-lg-3 text-login">Masukan data untuk melanjutkan</p>
-                        <form class="form-box px-3">
-                            <span class="NIP">NIP / NISN</span>
-                        <div class="form-input">
-                            <input
-                            type="text"
-                            name=""
-                            placeholder="Masukan NIP / NISN"
-                            tabindex="100"
-                            required
-                            />
-                        </div>
-                        <span class="NIP">Password</span>
-                        <div class="form-input">
-                            <input
-                            type="password"
-                            name=""
-                            placeholder="Password"
-                            required
-                            />
-                        </div>
-            
-                          <div class="mb-3">
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                class="custom-control-input"
-                                id="cb1"
-                                name=""
-                              />
-                              <label class="custom-control-label Rem" for="cb1"
-                                >Remember me</label
-                              >
-                            </div>
-                          </div>
-            
-                          <div class="mb-3 button-submit">
-                            <a href="#">
-                              <button type="submit" class="btn btn-block">
-                              <a href="/pages/siswa.html" class="text-light">Login</a>
-                              </button>
-                            </a>
-                          </div>
-                    </div>
+      <div class="row">
+        <div class="form-container">
+          <div class="form-box">
+            <div>
+              <img
+                class="logo-man mt-5"
+                src="/assets/logo-man.png"
+                alt="Logo MAN 3 Kota Sukabumi"
+                width="50"
+                height="62"
+              />
+              <h5 class="text-login mt-4">Selamat datang!</h5>
+
+              <p class="text-form mt-3">Masukan data untuk melanjutkan</p>
+
+              <form class="form-box">
+                <label class="mb-2 fw-semibold">NIP / NISN</label>
+                <div class="form-input">
+                  <input
+                    class="w-100"
+                    type="text"
+                    placeholder="Masukan NIP / NISN"
+                    required
+                  />
                 </div>
+                <label class="mb-2 fw-semibold">Password</label>
+                <div class="form-input">
+                  <input
+                    class="w-100"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox"
+                      for="flexCheckDefault"
+                    >
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </form>
+
+              <div class="mb-3 button-submit">
+                <button type="submit" class="btn btn-primary w-100">
+                  <a class="text-white fw-semibold" href="pages/admin.html">
+                    Login
+                  </a>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div> 
-</body>
+      </div>
+    </div>
+  </body>
 </html>

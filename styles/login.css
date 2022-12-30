@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #4d9937;
+  --second-color: #1d1e2f;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  margin-top: 48px;
+}
+
+/* Styling Login */
+.form-input input {
+  width: 400px;
+  height: 45px;
+  padding-left: 18px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #00000020;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+}
+
+.form-input input::placeholder {
+  font-size: 15px;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+  border: 2px solid var(--main-color);
+}
+
+.form-input input:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--main-color) !important;
+  border: 0px;
+}
+
+.form-box button[type="submit"] {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  border-radius: 10px;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  padding: 12px;
+}
+
+.form-box button[type="submit"]:hover {
+  background: var(--main-color);
+}
+
+.button-submit a:hover {
+  text-decoration: none;
+}
+
+.text-login {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.text-form {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.logo-man {
+  margin-left: 120px;
+}
+
+/* Responsive Design */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .logo-man {
+    margin-left: 0px;
+  }
+
+  .text-login {
+    text-align: left;
+  }
+
+  .text-form {
+    text-align: left;
+  }
+}
