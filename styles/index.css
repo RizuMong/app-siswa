@@ -448,21 +448,19 @@ footer a {
 }
 
 .btn-submit-laporan a {
-  color: #d1d3d1;
+  color: white;
 }
 
 .btn-submit-laporan {
-  color: #eff8ec;
+  color: var(--main-color);
   font-weight: 600;
   font-size: 16px;
   height: 45px;
   background-color: var(--main-color);
 }
 
-.btn-submit-laporan:hover {
-  border: 1px solid var(--main-color);
+.btn-submit-laporan:hover a {
   color: var(--main-color);
-  background-color: #fff;
 }
 
 .text-absen-siswa {
