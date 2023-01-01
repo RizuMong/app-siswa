@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/index.css" />
-    <title>Admin</title>
+    <title>Super Admin</title>
   </head>
   <body>
     <main class="containner" id="dashboard">
@@ -22,18 +22,36 @@
               <ul class="list p-3">
                 <li class="menu">Menu</li>
                 <li class="menu-das">
+                  <a href="super_admin.html">
+                    <img src="/assets/logo dash.png" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Dashboard</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/guru-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Guru</span>
+                  </a>
+                </li>
+                <li class="menu-das">
                   <a href="#">
                     <img src="/assets/logo-kelas.svg" alt="" class="icon2" />
                     <span class="text-das align-text-top">Kelas</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/siswa-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Siswa</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <footer>
-            <a href="../index.html" class="p-3">
+            <a href="#" class="p-3">
               <img src="/assets/logout.png" alt="" class="icon-logout" />
-              <span class="text-logout">Logout</span>
+              <span class="text-logout">logout</span>
             </a>
           </footer>
         </div>
@@ -48,6 +66,24 @@
               <a href="#" class="nav-link text-center">
                 <img src="/assets/das-nav.svg" alt="" class="" />
                 <span class="small d-block">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-center">
+                <img src="/assets/guru1-logo.svg" alt="" class="" />
+                <span class="small d-block">Guru</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-center">
+                <img src="/assets/kelas1-logo.svg" alt="" class="" />
+                <span class="small d-block">Kelas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-center">
+                <img src="/assets/siswa1-logo.svg" alt="" class="" />
+                <span class="small d-block">Siswa</span>
               </a>
             </li>
 
@@ -69,6 +105,7 @@
         </nav>
 
         <!-- end -->
+        
         <div class="container-fluid d-flex justify-content-between mt-2">
           <span class="d-lg-none img-tab p-3">
             <img src="/assets/logo-man-2.png" alt="" />
@@ -76,7 +113,7 @@
           <p
             class="navbar-brand-title p-4 pt-4 text-decoration-none d-none d-sm-none d-lg-block"
           >
-            Dashboard
+            Data Guru
           </p>
           <a class="navbar-brand p-4 pt-4 d-flex" href="#">
             <img
@@ -91,86 +128,30 @@
         </div>
         <hr class="mt-0 mx-5" />
 
+        
+
+        
         <section id="Jadwal">
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                <span class="title-card">Jadwal Pembelajaran Siswa</span>
+              <div class="col-12 mt-3">
+                <span class="title-card">List Guru</span>
               </div>
             </div>
 
-            <!-- card -->
-            <div class="row mb-5">
-              <div class="col-md-6 col-lg-5 col-xl-4 m-0">
-                <div class="card-jadwal">
-                  <div class="card-content mx-auto">
-                    <p class="card-matkul my-2">Matematika wajib</p>
+            <!-- table -->
 
-                    <div class="kelas-jadwal p mt-3 mb-0">
-                      <div class="kelas d-flex">
-                        <p>Kelas: &nbsp;</p>
-                        <span>12IPA2</span>
-                      </div>
-                      <div class="jadwal d-flex">
-                        <p>Jadwal: &nbsp;</p>
-                        <span id="jadwal-guru">Kamis, 08:00 - 09:30</span>
-                      </div>
-                    </div>
-
-                    <div class="card-unduh my-1">
-                      <p class="p-guru">Bahan pembelajaran</p>
-                      <div class="d-flex card-profile" href="#">
-                        <img
-                          src="/assets/pdf.png"
-                          alt=""
-                          class="d-inline-block img-profile card-image"
-                        />
-                        <p class="mapel">Slide Matematika Sesi 1</p>
-                        <div class="button-unduh">
-                          <a class="download text-decoration-none" href="http"
-                            >Unduh</a
-                          >
-                        </div>
-                        <div class="clear"></div>
-                      </div>
-                      <div class="d-flex card-profile" href="#">
-                        <img
-                          src="/assets/pdf.png"
-                          alt=""
-                          class="d-inline-block img-profile card-image"
-                        />
-                        <p class="mapel">Slide Matematika Sesi 1</p>
-                        <div class="button-unduh">
-                          <a class="download text-decoration-none" href="http"
-                            >Unduh</a
-                          >
-                        </div>
-                        <div class="clear"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- modal -->
-                  <!-- Button trigger modal -->
-                  <button
+            <!-- modal -->
+            
+                <button
                     type="button"
-                    class="btn btn-lapor w-100"
+                    class="btn btn-tambah-guru mt-2 "
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                  >
-                    Tambah Pembelajaran
-                  </button>
+                >
+                    Tambah Guru
+                </button>
 
-                  <button
-                    type="button"
-                    class="btn d-flex justify-content-end btn-tambah-guru mt-2"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                  >
-                    Edit Pembelajaran
-                  </button>
-
-                  <!-- Modal -->
                   <div
                     class="modal fade"
                     id="staticBackdrop"
@@ -245,8 +226,73 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+            <!-- end modal -->
+
+
+            <div class="table-responsive">
+              <table class="table table-striped table-hover mx-4 mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">NIP</th>
+                    <th scope="col">NAMA</th>
+                    <th scope="col">MAPEL</th>
+                    <th scope="col">TTL</th>
+                    <th scope="col">ALAMAT</th>
+                    <th scope="col">AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td class="d-flex">
+                        <button class="border-0 ">
+                            <img src="/assets/edit.svg" alt="">
+                        </button>
+                        <button class="border-0 ps-3">
+                            <img src="/assets/delete1.svg" alt="">
+                        </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td class="d-flex">
+                        <button class="border-0 ">
+                            <img src="/assets/edit.svg" alt="">
+                        </button>
+                        <button class="border-0 ps-3">
+                            <img src="/assets/delete1.svg" alt="">
+                        </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td class="d-flex">
+                        <button class="border-0 ">
+                            <img src="/assets/edit.svg" alt="">
+                        </button>
+                        <button class="border-0 ps-3">
+                            <img src="/assets/delete1.svg" alt="">
+                        </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
