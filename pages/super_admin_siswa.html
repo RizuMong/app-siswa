@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Super Admin</title>
+  </head>
+  <body>
+    <main class="containner" id="dashboard">
+      <div class="sidebar d-none d-md-none d-lg-block position-fixed">
+        <div class="header p-4">
+          <div class="list-item">
+            <a href="#" class="p-3">
+              <img src="/assets/logo-man-2.png" alt="" class="icon" />
+              <span class="text-judul">MAN 2 KOTA SUKABUMI</span>
+            </a>
+
+            <div class="main">
+              <ul class="list p-3">
+                <li class="menu">Menu</li>
+                <li class="menu-das">
+                  <a href="super_admin.html">
+                    <img src="/assets/logo dash.png" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Dashboard</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="super_admin_guru.html">
+                    <img src="/assets/guru-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Guru</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="super_admin_kelas.html">
+                    <img src="/assets/logo-kelas.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Kelas</span>
+                  </a>
+                </li>
+                <li class="menu-das">
+                  <a href="#">
+                    <img src="/assets/siswa-logo.svg" alt="" class="icon2" />
+                    <span class="text-das align-text-top">Siswa</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <footer>
+            <a href="#" class="p-3">
+              <img src="/assets/logout.png" alt="" class="icon-logout" />
+              <span class="text-logout">logout</span>
+            </a>
+          </footer>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <nav
+          class="navbar navbar-light bg-white navbar-expand fixed-bottom d-lg-none p-0"
+        >
+          <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+              <a href="super_admin.html" class="nav-link text-center">
+                <img src="/assets/das-nav.svg" alt="" class="" />
+                <span class="small d-block">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="super_admin_guru.html" class="nav-link text-center">
+                <img src="/assets/guru1-logo.svg" alt="" class="" />
+                <span class="small d-block">Guru</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="super_admin_kelas.html" class="nav-link text-center">
+                <img src="/assets/kelas1-logo.svg" alt="" class="" />
+                <span class="small d-block">Kelas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-center">
+                <img src="/assets/siswa1-logo.svg" alt="" class="" />
+                <span class="small d-block">Siswa</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropup">
+              <a
+                href="#"
+                class="nav-link text-center"
+                role="button"
+                id="dropdownMenuProfile"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="/assets/log-nav.svg" alt="" class="" />
+                <span class="small d-block">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- end -->
+
+        <div class="container-fluid d-flex justify-content-between mt-2">
+          <span class="d-lg-none img-tab p-3">
+            <img src="/assets/logo-man-2.png" alt="" />
+          </span>
+          <p
+            class="navbar-brand-title p-4 pt-4 text-decoration-none d-none d-sm-none d-lg-block"
+          >
+            Data Siswa
+          </p>
+          <a class="navbar-brand p-4 pt-4 d-flex" href="#">
+            <img
+              src="/assets/foto-profil.png"
+              alt=""
+              class="d-inline-block img-profile"
+            />
+            <p class="text-profile align-text-top d-none d-sm-none d-md-block">
+              Hai, jhon doe
+            </p>
+          </a>
+        </div>
+        <hr class="mt-0 mx-5" />
+
+        <section id="Jadwal">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mt-3">
+                <span class="title-card">List Siswa</span>
+              </div>
+            </div>
+
+            <!-- table -->
+
+            <!-- modal -->
+
+            <div class="btn-add d-flex justify-content-end me-2 mb-2">
+              <button
+                type="button"
+                class="btn btn-tambah-guru mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Tambah Siswa
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content p-3">
+                  <div class="modal-header ms-2">
+                    <span class="modal-title" id=""> Tambah Data Siswa </span>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body mt-0">
+                    <!-- modal body -->
+                    <form>
+                      <div class="form-group my-2">
+                        <label for="NISN" class="mb-2">NISN</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="nisn"
+                          placeholder="Masukan NISN"
+                        />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="name-siswa" class="my-2">Nama</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name-siswa"
+                          placeholder="Masukan Nama"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="kelas" class="my-2">Kelas</label>
+                        <select class="form-control" id="kelas">
+                          <option>Pilih Kelas</option>
+                          <option>Kelas 10</option>
+                          <option>Kelas 11</option>
+                          <option>Kelas 12</option>
+                        </select>
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="ttl-siswa" class="my-2"
+                          >Tanggal Lahir</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="ttl-siswa"
+                        />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="alamat-siswa" class="my-2">Alamat</label>
+                        <textarea
+                          class="form-control"
+                          id="alamat-siswa"
+                          rows="3"
+                          placeholder="Masukan Alamat Lengkap"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-submit-laporan w-100">
+                      <a href="#" class="text-decoration-none text-light"
+                        >Tambahkan Siswa</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end modal -->
+
+            <div class="table-responsive">
+              <table class="table mx-4 mt-3">
+                <thead class="table-secondary">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">NIP</th>
+                    <th scope="col">NAMA</th>
+                    <th scope="col">MAPEL</th>
+                    <th scope="col">TTL</th>
+                    <th scope="col">ALAMAT</th>
+                    <th scope="col">AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="ps-4">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td class="d-flex btn-aksi">
+                      <button
+                        type="button"
+                        class="btn btn-edit-guru border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
+                        <img src="/assets/edit.svg" alt="" />
+                      </button>
+
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content p-3">
+                            <div class="modal-header ms-4">
+                              <span class="modal-title" id="">
+                                Edit Data Siswa
+                              </span>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+
+                            <div class="modal-body mt-0">
+                              <!-- modal body -->
+                              <form>
+                                <div class="form-group my-2">
+                                  <label for="NISN" class="mb-2">NISN</label>
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="nisn"
+                                    placeholder="Masukan NISN"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="name-siswa" class="my-2"
+                                    >Nama</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name-siswa"
+                                    placeholder="Masukan Nama"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="kelas" class="my-2">Kelas</label>
+                                  <select class="form-control" id="kelas">
+                                    <option>Pilih Kelas</option>
+                                    <option>Kelas 10</option>
+                                    <option>Kelas 11</option>
+                                    <option>Kelas 12</option>
+                                  </select>
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="ttl-siswa" class="my-2"
+                                    >Tanggal Lahir</label
+                                  >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ttl-siswa"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="alamat-siswa" class="my-2"
+                                    >Alamat</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    id="alamat-siswa"
+                                    rows="3"
+                                    placeholder="Masukan Alamat Lengkap"
+                                  ></textarea>
+                                </div>
+                              </form>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-submit-laporan w-100"
+                              >
+                                <a
+                                  href="#"
+                                  class="text-decoration-none text-light"
+                                  >Edit Siswa</a
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+                      <button class="border-0 btn btn-delete-guru" id="">
+                        <img src="/assets/delete1.svg" alt="" />
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="../src/js/bootstrap.bundle.js"></script>
+</html>

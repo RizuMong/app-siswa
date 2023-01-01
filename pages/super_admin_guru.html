@@ -34,13 +34,13 @@
                   </a>
                 </li>
                 <li class="menu-das">
-                  <a href="#">
+                  <a href="super_admin_kelas.html">
                     <img src="/assets/logo-kelas.svg" alt="" class="icon2" />
                     <span class="text-das align-text-top">Kelas</span>
                   </a>
                 </li>
                 <li class="menu-das">
-                  <a href="#">
+                  <a href="super_admin_siswa.html">
                     <img src="/assets/siswa-logo.svg" alt="" class="icon2" />
                     <span class="text-das align-text-top">Siswa</span>
                   </a>
@@ -63,7 +63,7 @@
         >
           <ul class="navbar-nav nav-justified w-100">
             <li class="nav-item">
-              <a href="#" class="nav-link text-center">
+              <a href="super_admin.html" class="nav-link text-center">
                 <img src="/assets/das-nav.svg" alt="" class="" />
                 <span class="small d-block">Dashboard</span>
               </a>
@@ -75,13 +75,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-center">
+              <a href="super_admin_kelas.html" class="nav-link text-center">
                 <img src="/assets/kelas1-logo.svg" alt="" class="" />
                 <span class="small d-block">Kelas</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-center">
+              <a href="super_admin_siswa.html" class="nav-link text-center">
                 <img src="/assets/siswa1-logo.svg" alt="" class="" />
                 <span class="small d-block">Siswa</span>
               </a>
@@ -172,12 +172,56 @@
                     ></button>
                   </div>
 
-                  <div class="modal-body mt-4"></div>
+                  <div class="modal-body mt-0">
+                    <!-- modal body -->
+                    <form>
+                      <div class="form-group my-2">
+                        <label for="nip" class="mb-2">NIP</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="nip"
+                          placeholder="Masukan NIP"
+                        />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="name" class="my-2">Nama</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Masukan Nama"
+                        />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="mapel" class="my-2">Mata Pelajaran</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mapel"
+                          placeholder="Mata Pelajaran"
+                        />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="ttl" class="my-2">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="ttl" />
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="alamat" class="my-2">Alamat</label>
+                        <textarea
+                          class="form-control"
+                          id="alamat"
+                          rows="3"
+                          placeholder="Masukan Alamat Lengkap"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-submit-laporan w-100">
                       <a href="#" class="text-decoration-none text-light"
-                        >Submit</a
+                        >Tambahkan Guru</a
                       >
                     </button>
                   </div>
@@ -187,7 +231,7 @@
             <!-- end modal -->
 
             <div class="table-responsive">
-              <table class="table table-hover mx-4 mt-3">
+              <table class="table mx-4 mt-3">
                 <thead class="table-secondary">
                   <tr>
                     <th scope="col"></th>
@@ -201,49 +245,358 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" class="ps-4">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
-                    <td class="d-flex">
-                      <button class="border-0">
+                    <td class="d-flex btn-aksi">
+                      <button
+                        type="button"
+                        class="btn btn-edit-guru border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
                         <img src="/assets/edit.svg" alt="" />
                       </button>
-                      <button class="border-0 ps-3">
+
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content p-3">
+                            <div class="modal-header ms-4">
+                              <span class="modal-title" id="">
+                                Edit Data Guru
+                              </span>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+
+                            <div class="modal-body mt-0">
+                              <!-- modal body -->
+                              <form>
+                                <div class="form-group my-2">
+                                  <label for="nip" class="mb-2">NIP</label>
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="nip"
+                                    placeholder="Masukan NIP"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="name" class="my-2">Nama</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Masukan Nama"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="mapel" class="my-2"
+                                    >Mata Pelajaran</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="mapel"
+                                    placeholder="Mata Pelajaran"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="ttl" class="my-2"
+                                    >Tanggal Lahir</label
+                                  >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ttl"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="message" class="my-2"
+                                    >Alamat</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="3"
+                                    placeholder="Masukan Alamat Lengkap"
+                                  ></textarea>
+                                </div>
+                              </form>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-submit-laporan w-100"
+                              >
+                                <a
+                                  href="#"
+                                  class="text-decoration-none text-light"
+                                  >Edit Guru</a
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+                      <button class="border-0 btn btn-delete-guru" id="">
                         <img src="/assets/delete1.svg" alt="" />
                       </button>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
+                    <th scope="row" class="ps-4">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
-                    <td class="d-flex">
-                      <button class="border-0">
+                    <td class="d-flex btn-aksi">
+                      <button
+                        type="button"
+                        class="btn btn-edit-guru border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
                         <img src="/assets/edit.svg" alt="" />
                       </button>
-                      <button class="border-0 ps-3">
+
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content p-3">
+                            <div class="modal-header ms-4">
+                              <span class="modal-title" id="">
+                                Edit Data Guru
+                              </span>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+
+                            <div class="modal-body mt-0">
+                              <!-- modal body -->
+                              <form>
+                                <div class="form-group my-2">
+                                  <label for="nip" class="mb-2">NIP</label>
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="nip"
+                                    placeholder="Masukan NIP"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="name" class="my-2">Nama</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Masukan Nama"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="mapel" class="my-2"
+                                    >Mata Pelajaran</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="mapel"
+                                    placeholder="Mata Pelajaran"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="ttl" class="my-2"
+                                    >Tanggal Lahir</label
+                                  >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ttl"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="message" class="my-2"
+                                    >Alamat</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="3"
+                                    placeholder="Masukan Alamat Lengkap"
+                                  ></textarea>
+                                </div>
+                              </form>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-submit-laporan w-100"
+                              >
+                                <a
+                                  href="#"
+                                  class="text-decoration-none text-light"
+                                  >Edit Guru</a
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+                      <button class="border-0 btn btn-delete-guru" id="">
                         <img src="/assets/delete1.svg" alt="" />
                       </button>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <th scope="row" class="ps-4">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
-                    <td class="d-flex">
-                      <button class="border-0">
+                    <td class="d-flex btn-aksi">
+                      <button
+                        type="button"
+                        class="btn btn-edit-guru border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
                         <img src="/assets/edit.svg" alt="" />
                       </button>
-                      <button class="border-0 ps-3">
+
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content p-3">
+                            <div class="modal-header ms-4">
+                              <span class="modal-title" id="">
+                                Edit Data Guru
+                              </span>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+
+                            <div class="modal-body mt-0">
+                              <!-- modal body -->
+                              <form>
+                                <div class="form-group my-2">
+                                  <label for="nip" class="mb-2">NIP</label>
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="nip"
+                                    placeholder="Masukan NIP"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="name" class="my-2">Nama</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Masukan Nama"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="mapel" class="my-2"
+                                    >Mata Pelajaran</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="mapel"
+                                    placeholder="Mata Pelajaran"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="ttl" class="my-2"
+                                    >Tanggal Lahir</label
+                                  >
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ttl"
+                                  />
+                                </div>
+                                <div class="form-group my-2">
+                                  <label for="message" class="my-2"
+                                    >Alamat</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="3"
+                                    placeholder="Masukan Alamat Lengkap"
+                                  ></textarea>
+                                </div>
+                              </form>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-submit-laporan w-100"
+                              >
+                                <a
+                                  href="#"
+                                  class="text-decoration-none text-light"
+                                  >Edit Guru</a
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end -->
+
+                      <button class="border-0 btn btn-delete-guru" id="">
                         <img src="/assets/delete1.svg" alt="" />
                       </button>
                     </td>

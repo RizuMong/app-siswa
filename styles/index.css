@@ -508,9 +508,13 @@ nav ul li a span {
 
 /* guru */
 .btn-tambah-guru {
-  width: 145px;
+  width: auto;
   color: white;
   font-size: 16px;
   font-weight: 500;
   background-color: var(--main-color);
+}
+
+.btn-aksi {
+  margin-left: -20px;
 }
